@@ -1,17 +1,17 @@
 mirrors:
   docker.io:
     endpoint:
-      - http://dockerio-cache.registry-cache.svc:5000
       - http://host.k3d.internal:5000
-  quay.io:
-    endpoint:
-      - http://quayio-cache.registry-cache.svc:5000
-  gcr.io:
-    endpoint:
-      - http://gcrio-cache.registry-cache.svc:5000
-  k8s.gcr.io:
-    endpoint:
-      - http://k8sgcrio-cache.registry-cache.svc:5000
+  #     - http://dockerio-cache.registry-cache.svc:5000
+  # quay.io:
+  #   endpoint:
+  #     - http://quayio-cache.registry-cache.svc:5000
+  # gcr.io:
+  #   endpoint:
+  #     - http://gcrio-cache.registry-cache.svc:5000
+  # k8s.gcr.io:
+  #   endpoint:
+  #     - http://k8sgcrio-cache.registry-cache.svc:5000
 configs:
   "host.k3d.internal:5000":
     insecure_skip_verify: true
