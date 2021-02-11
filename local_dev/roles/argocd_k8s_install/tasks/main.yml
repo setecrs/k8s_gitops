@@ -10,7 +10,7 @@
   get_url:
     url: https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
     dest: /tmp/argocd.yaml
-    checksum: sha1:bb604abaa6ca75735c838b821b43624fac12a161
+    checksum: sha1:51f80e426728ded46ae6f37ccfe6b1f8e3d8593c
 
 - name: Install ArgoCD
   community.kubernetes.k8s:
