@@ -5,18 +5,23 @@
   vars:
     cluster_name: cicd
   roles:
-    # this installs a registry pull through cache in docker, but outside k8s
+    # install a registry pull through cache in docker, but outside k8s
     - role: registry_outsidek8s_install
 
+    # create a k3d cluster
     - role: k3d_cluster_create
     
+    # append new cluster config on ~/.kube/config and switch to the new context
     - role: merge_local_kubeconfig
     
+    # exports this repository in k8s as a local git server
     - role: localgit_k8s_install
       namespace: localgit
     
+    # install argocd in k8s
     - role: argocd_k8s_install
       namespace: argocd
     
+    # install argocd_apps in argocd; argocd_apps is an app that creates other apps
     - role: argocd_k8s_apps
       namespace: argocd
