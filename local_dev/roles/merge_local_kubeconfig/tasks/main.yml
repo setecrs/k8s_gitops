@@ -1,0 +1,3 @@
+---
+- name: Merge kubeconfig
+  command: k3d kubeconfig merge {{ cluster_name }} --kubeconfig-merge-default --kubeconfig-switch-context
