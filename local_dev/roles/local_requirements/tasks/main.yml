@@ -7,3 +7,4 @@
       - molecule[docker,lint]
       - openshift
     state: latest
+    extra_args: --user
