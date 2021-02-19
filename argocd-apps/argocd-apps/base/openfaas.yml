@@ -41,7 +41,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git://daemon.localgit.svc.cluster.local/
+    repoURL: git://github.com/setecrs/k8s_gitops/
     targetRevision: HEAD
     path: argocd-apps/openfaas
     helm:

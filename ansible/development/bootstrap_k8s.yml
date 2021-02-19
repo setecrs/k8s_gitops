@@ -25,3 +25,4 @@
     # install argocd_apps in argocd; argocd_apps is an app that creates other apps
     - role: argocd_k8s_apps
       namespace: argocd
+      repoURL: git://daemon.localgit.svc.cluster.local/

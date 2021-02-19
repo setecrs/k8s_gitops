@@ -1,0 +1,15 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  vars:
+    cluster_name: cicd
+  roles:
+    # install argocd in k8s
+    - role: argocd_k8s_install
+      namespace: argocd
+    
+    # install argocd_apps in argocd; argocd_apps is an app that creates other apps
+    - role: argocd_k8s_apps
+      namespace: argocd
+      repoURL: git://github.com/setecrs/k8s_gitops/

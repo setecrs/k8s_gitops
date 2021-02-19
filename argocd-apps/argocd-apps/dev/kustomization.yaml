@@ -1,0 +1,3 @@
+resources:
+- ../openfaas.yml
+- ../registry-cache.yml

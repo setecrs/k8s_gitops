@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git://daemon.localgit.svc.cluster.local/
+    repoURL: {{repoURL}}
     targetRevision: HEAD
     path: argocd-apps/argocd-apps
     # Uncomment this if target uses helm:
