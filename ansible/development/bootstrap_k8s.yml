@@ -26,3 +26,4 @@
     - role: argocd_k8s_apps
       namespace: argocd
       repoURL: git://daemon.localgit.svc.cluster.local/
+      path: argocd-apps/argocd-apps/dev

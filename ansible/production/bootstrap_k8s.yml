@@ -13,3 +13,4 @@
     - role: argocd_k8s_apps
       namespace: argocd
       repoURL: git://github.com/setecrs/k8s_gitops/
+      path: argocd-apps/argocd-apps/prod
