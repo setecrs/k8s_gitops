@@ -1,5 +1,0 @@
-bases:
-- docker.io
-- quay.io
-- gcr.io
-- k8s.gcr.io
