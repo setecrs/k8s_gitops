@@ -1,2 +1,2 @@
 resources:
-- ../openfaas.yml
+- ../base/openfaas.yml
