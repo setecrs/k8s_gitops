@@ -1,2 +1,3 @@
 resources:
   - ./openfaas.yml
+  - ./iped_jobs.yml
