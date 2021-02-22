@@ -7,9 +7,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git://github.com/setecrs/iped_jobs/
+    repoURL: git://github.com/setecrs/k8s_gitops/
     targetRevision: HEAD
-    path: k8s
+    path: argocd-apps/iped_jobs
   destination:
     server: https://kubernetes.default.svc
     namespace: default
